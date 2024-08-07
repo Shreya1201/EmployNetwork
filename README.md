@@ -1,8 +1,8 @@
-# Employee Management System
+# EmployNet
 
 ## Overview
 
-The Employee Management System is an ASP.NET Core MVC application designed to facilitate the management of employee details within a company. This system supports role-based access control, enabling various functionalities depending on the user's role. It leverages SQL Server for data storage, Bootstrap for UI enhancements, and the ASP.NET Core Identity API for role management.
+The EmployeNet is an ASP.NET Core MVC application designed to facilitate the management of employee details within a company. This system supports role-based access control, enabling various functionalities depending on the user's role. It leverages SQL Server for data storage, Bootstrap for UI enhancements, and the ASP.NET Core Identity API for role management.
 
 ## Features
 
