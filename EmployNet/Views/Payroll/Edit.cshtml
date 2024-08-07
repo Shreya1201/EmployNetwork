@@ -1,0 +1,61 @@
+﻿@model EmployNet.Models.Payroll
+
+@{
+    ViewData["Title"] = "Edit Payroll";  // Set the page title
+}
+
+<h2>Edit Payroll</h2>
+
+<form asp-action="Edit">
+    <!-- Employee ID field (read-only) -->
+    <div class="form-group">
+        <label asp-for="EmployeeId" class="control-label"></label>
+        <input asp-for="EmployeeId" class="form-control" readonly />
+        <span asp-validation-for="EmployeeId" class="text-danger"></span>
+    </div>
+
+    <!-- Base Salary field -->
+    <div class="form-group">
+        <label asp-for="BaseSalary" class="control-label"></label>
+        <input asp-for="BaseSalary" class="form-control" />
+        <span asp-validation-for="BaseSalary" class="text-danger"></span>
+    </div>
+
+    <!-- Bonus field -->
+    <div class="form-group">
+        <label asp-for="Bonus" class="control-label"></label>
+        <input asp-for="Bonus" class="form-control" />
+        <span asp-validation-for="Bonus" class="text-danger"></span>
+    </div>
+
+    <!-- Deductions field -->
+    <div class="form-group">
+        <label asp-for="Deductions" class="control-label"></label>
+        <input asp-for="Deductions" class="form-control" />
+        <span asp-validation-for="Deductions" class="text-danger"></span>
+    </div>
+
+    <!-- Pay Date field -->
+    <div class="form-group">
+        <label asp-for="PayDate" class="control-label"></label>
+        <input asp-for="PayDate" class="form-control" />
+        <span asp-validation-for="PayDate" class="text-danger"></span>
+    </div>
+
+    <!-- Total Pay field (read-only) -->
+    <div class="form-group">
+        <label asp-for="TotalPay" class="control-label"></label>
+        <input asp-for="TotalPay" class="form-control" readonly />
+        <span asp-validation-for="TotalPay" class="text-danger"></span>
+    </div>
+
+    <!-- Save button -->
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+</form>
+
+<!-- Link to go back to the list page -->
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
